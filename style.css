@@ -1,26 +1,41 @@
 body {
-    max-width: 800px;
+    max-width: 65ch;
     margin: 0 auto;
-    padding: 20px;
-    font-family: monospace;
-    line-height: 1.6;
+    padding: 1 rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background: #fefefe;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
 }
 
 nav {
-    margin: 20px 0;
-    padding: 10px;
+    margin: 1.5rem 0;
+    padding: 0.5rem;
     background: #f0f0f0;
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 2rem;
     font-size: 0.8em;
+    color: #666;
 }
 
 .warning {
-/*  color: #d32f2f; */
-    font-weight: bold;
     border-left: 3px solid #d32f2f;
-    padding-left: 10px;
+    padding-left: 0.75rem;
+    color: #d32f2f;
 }
+
+.dev-banner {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffc107;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  font-family: monospace;
+  white-space: pre;
+  overflow-x: auto;
 
