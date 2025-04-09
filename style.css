@@ -4,8 +4,7 @@ body {
     padding: 1 rem;
     font-family: sans-serif;
     line-height: 1.5;
-    color: #333;
-    background: #eeeeee;
+    color: #444;
 }
 
 h1, h2, h3 {
@@ -27,7 +26,6 @@ footer {
 .warning {
     border-left: 3px solid #d32f2f;
     padding-left: 0.75rem;
-    color: #d32f2f;
 }
 
 .dev-banner {
