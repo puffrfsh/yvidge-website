@@ -1,0 +1,26 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: monospace;
+    line-height: 1.6;
+}
+
+nav {
+    margin: 20px 0;
+    padding: 10px;
+    background: #f0f0f0;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.8em;
+}
+
+.warning {
+/*  color: #d32f2f; */
+    font-weight: bold;
+    border-left: 3px solid #d32f2f;
+    padding-left: 10px;
+}
+
