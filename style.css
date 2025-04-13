@@ -149,3 +149,46 @@ ul, ol {
     background: #ffe6e6;
     border-left: 3px solid #dc3545;
 }
+
+/* Стили для таблиц */
+.storage-table, .password-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.storage-table th, .storage-table td,
+.password-table th, .password-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.storage-table th {
+    background-color: #f8f9fa;
+}
+
+/* Блоки с методами хранения */
+.backup-methods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.method {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.method h3 {
+    margin-top: 0;
+}
+
+/* Предупреждения */
+.warning {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 1rem;
+    margin: 1rem 0;
+}
