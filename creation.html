@@ -2,23 +2,163 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Как создать пароль</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как создать безопасный пароль</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Руководство по созданию и хранению безопасных паролей - современные методы и рекомендации экспертов по кибербезопасности">
 </head>
 <body>
-    <h1>как правильн выбирать пароли</h1>
-    
-    <nav>
-        <a href="index.html">Главная</a>
-    </nav>
+    <header>
+        <h1>Как правильно выбирать пароли</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+        </nav>
+    </header>
 
-    <article>
-      <p><dfn>Diceware</dfn> — метод генерации паролей с помощью списка слов.</p>
+    <article class="password-guide">
+        <section class="intro">
+            <p>Эта статья научит вас создавать пароли, устойчивые к взлому, используя современные методы и рекомендации экспертов по кибербезопасности.</p>
+        </section>
+
+        <section class="requirements">
+            <h2>Основные требования к безопасному паролю</h2>
+            <div class="requirements-grid">
+                <div class="requirement">
+                    <h3>Длина важнее сложности</h3>
+                    <ul>
+                        <li>Минимум 12 символов (для важных аккаунтов — 16+)</li>
+                        <li>Пример: <code>cheesy-drivable-handshake</code> (4 слова) надёжнее, чем <code>P@ssw0rd1!</code></li>
+                    </ul>
+                </div>
+                
+                <div class="requirement">
+                    <h3>Энтропия (случайность)</h3>
+                    <ul>
+                        <li>Избегайте предсказуемых шаблонов: дат, имён, последовательностей клавиш (qwerty)</li>
+                    </ul>
+                </div>
+
+                <div class="requirement">
+                    <h3>Уникальность</h3>
+                    <ul>
+                        <li>Никогда не используйте один пароль для нескольких сервисов</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="methods">
+            <h2>Методы создания надёжных паролей</h2>
+
+            <article class="method">
+                <h3>1. Пассфразы</h3>
+                <div class="method-content">
+                    <p><strong>Что это:</strong> Комбинация из 4–6 случайных слов</p>
+                    <p><strong>Почему работает:</strong> Длина пароля важнее сложности символов</p>
+                    
+                    <div class="examples">
+                        <div class="good-example">
+                            <h4>Примеры хороших пассфраз:</h4>
+                            <ul>
+                                <li><code>correct-horse-battery-staple</code></li>
+                                <li><code>fluffy-pineapple-bounces-joyfully</code></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="warning">
+                            <p>⚠️ Не придумывайте слова самостоятельно. Используйте генераторы с криптографически безопасными алгоритмами, например, в менеджере паролей KeePassXC.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="method">
+                <h3>2. Генераторы случайных паролей</h3>
+                <div class="method-content">
+                    <p><strong>Что это:</strong> Программы, создающие криптографически стойкие комбинации</p>
+                    
+                    <div class="tools">
+                        <h4>Рекомендуемые инструменты:</h4>
+                        <ul>
+                            <li>Менеджеры паролей: Bitwarden, 1Password, KeePassXC</li>
+                            <li>Онлайн-генераторы: Random.org, LastPass</li>
+                        </ul>
+                    </div>
+
+                    <div class="example">
+                        <h4>Пример сгенерированного пароля:</h4>
+                        <code class="generated-password">alQI#WT#o})/X]CApAF@K</code>
+                    </div>
+                </div>
+            </article>
+
+            <article class="method">
+                <h3>3. Ручные методы (для повышенной безопасности)</h3>
+                <div class="method-content">
+                    <div class="manual-method">
+                        <h4>Метод монет</h4>
+                        <ol>
+                            <li>Подбросьте монету 128 раз</li>
+                            <li>Запишите результаты в двоичной системе</li>
+                            <li>Используйте получившуюся строку как пароль</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="comparison">
+            <h2>Примеры: Хорошие vs. Плохие пароли</h2>
+            <table class="password-table">
+                <thead>
+                    <tr>
+                        <th>Ненадёжные</th>
+                        <th>Надёжные</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>Qwerty123!</code></td>
+                        <td><code>V7m#v9Lq$8ZP@2eR&fYt</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>Masha3Petya</code></td>
+                        <td><code>fluffy-pineapple-bounces</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="mistakes">
+            <h2>Частые ошибки</h2>
+            <ul class="mistakes-list">
+                <li>Использование личной информации</li>
+                <li>Повторение паролей (43% пользователей используют один пароль везде)</li>
+                <li>Хранение в незащищённых местах</li>
+            </ul>
+        </section>
+
+        <section class="recommendations">
+            <h2>Рекомендации после создания пароля</h2>
+            <ol class="steps">
+                <li>Сохраните в менеджере паролей</li>
+                <li>Включите двухфакторную аутентификацию</li>
+                <li>Регулярно обновляйте пароли</li>
+            </ol>
+        </section>
+
+        <section class="conclusion">
+            <blockquote>
+                <p>Создание надёжного пароля — не ракетостроение. Используйте пассфразы или генераторы, избегайте шаблонов, и ваш аккаунт останется недоступным для злоумышленников.</p>
+            </blockquote>
+        </section>
     </article>
+
     <footer>
         <hr>
-        <p>© 2024-2025. Школьный проект. Лицензия: <a href="https://www.gnu.org/licenses/gpl-3.0.ru.html" target="_blank">GPLv3</a>.</p>
+        <p>© 2024-2025. Школьный проект. Лицензия: 
+            <a href="https://www.gnu.org/licenses/gpl-3.0.ru.html" target="_blank">GPLv3</a>.
+        </p>
     </footer>
-
 </body>
 </html>

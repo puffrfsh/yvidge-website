@@ -57,3 +57,95 @@ footer {
     border-left: 4px solid #2196f3;
     border-radius: 4px;
 }
+/* Основные стили */
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Навигация */
+nav {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Сетка требований */
+.requirements-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.requirement {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Примеры паролей */
+.generated-password {
+    display: inline-block;
+    padding: 10px;
+    background: #1a1a1a;
+    color: #00ff9d;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Таблица сравнения */
+.password-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.password-table th,
+.password-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.password-table th {
+    background-color: #f8f9fa;
+}
+
+/* Предупреждения */
+.warning {
+    padding: 15px;
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+/* Блоки кода */
+code {
+    font-family: 'Fira Code', monospace;
+    background: #f8f9fa;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Списки */
+ul, ol {
+    padding-left: 25px;
+    margin: 15px 0;
+}
+
+.mistakes-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #ffe6e6;
+    border-left: 3px solid #dc3545;
+}
