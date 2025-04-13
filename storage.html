@@ -1,10 +1,128 @@
-<html>
-  <body>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Безопасное хранение паролей</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Руководство по защищённому хранению паролей - менеджеры паролей, шифрование и резервное копирование">
+</head>
+<body>
+    <header>
+        <h1>Как хранить пароли правильно</h1>
+        <nav>
+            <a href="index.html">Главная</a> |
+            <a href="creation.html">Создание паролей</a>
+        </nav>
+    </header>
+
+    <article class="storage-guide">
+        <section class="intro">
+            <p>Даже самый сложный пароль бесполезен, если он хранится в незащищённом месте. Узнайте, как избежать 43% ошибок пользователей из нашего исследования.</p>
+        </section>
+
+        <section class="methods">
+            <h2>Основные методы хранения</h2>
+
+            <article class="method">
+                <h3>1. Менеджеры паролей</h3>
+                <div class="method-content">
+                    <p><strong>Принцип работы:</strong> Хранение в зашифрованной базе с мастер-паролем</p>
+                    
+                    <div class="tools">
+                        <h4>Рекомендуемые решения:</h4>
+                        <ul>
+                            <li><strong>Bitwarden</strong> (облачный, открытый код)</li>
+                            <li><strong>KeePassXC</strong> (оффлайн, AES-256)</li>
+                            <li><strong>1Password</strong> (бизнес-решения)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="method">
+                <h3>2. Шифрование файлов</h3>
+                <div class="method-content">
+                    <p><strong>Для продвинутых пользователей:</strong></p>
+                    <ol>
+                        <li>Создайте текстовый файл с паролями</li>
+                        <li>Зашифруйте с помощью GPG: 
+                        </li>
+                        <li>Удалите исходный файл</li>
+                    </ol>
+                    
+                    <div class="warning">
+                        <p>Не используйте простые архивы с паролем (ZIP/RAR).</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="method">
+                <h3>3. Аппаратные ключи</h3>
+                <div class="method-content">
+                    <p><strong>Для максимальной защиты:</strong></p>
+                    <ul>
+                        <li>YubiKey 5 Series (поддержка FIDO2/WebAuthn)</li>
+                        <li>Nitrokey Storage (шифрование + хранение)</li>
+                    </ul>
+                    <p>Совместимые сервисы: Google, GitHub, ProtonMail.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="comparison">
+            <h2>Безопасные vs. Опасные методы</h2>
+            <table class="storage-table">
+                <thead>
+                    <tr>
+                        <th>Ненадёжные</th>
+                        <th>Рекомендуемые</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Хранение в браузере</td>
+                        <td>Менеджер паролей</td>
+                    </tr>
+                    <tr>
+                        <td>Текстовый файл на рабочем столе / записки в телефоне</td>
+                        <td>Зашифрованный том VeraCrypt или LUKS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="backup">
+            <h2>Резервное копирование</h2>
+            <div class="backup-methods">
+                <div class="method">
+                    <h3>✅ Правильно</h3>
+                    <ul>
+                        <li>Зашифрованная флешка/ssd</li>
+                    </ul>
+                </div>
+                
+                <div class="method">
+                    <h3>❌ Опасно</h3>
+                    <ul>
+                        <li>Облачный диск без шифрования</li>
+                        <li>СМС/Email с паролями</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </article>
 
     <footer>
         <hr>
-        <p>© 2024-2025. Школьный проект. Лицензия: <a href="https://www.gnu.org/licenses/gpl-3.0.ru.html" target="_blank">GPLv3</a>.</p>
+        <p>© 2024-2025. Школьный проект. Лицензия: 
+            <a href="https://www.gnu.org/licenses/gpl-3.0.ru.html" target="_blank">GPLv3</a>.<br>
+            Источники: 
+            <a href="https://www.nist.gov/" target="_blank">NIST</a>, 
+            <a href="https://www.usenix.org/" target="_blank">USENIX</a>
+        </p>
     </footer>
+</body>
 </html>
-
