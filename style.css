@@ -37,4 +37,23 @@ footer {
   font-family: monospace;
   white-space: pre;
   overflow-x: auto;
+  
+.survey-section {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
 
+.survey-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.notice {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #e3f2fd;
+    border-left: 4px solid #2196f3;
+    border-radius: 4px;
+}
